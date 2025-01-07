@@ -1,0 +1,9 @@
+tasks:
+    localstack-start:
+        name: localstack-start
+        command: |
+            echo "start localstack"
+        triggeredBy:
+        - manual
+        # - postEnvironmentStart
+        # - postDevcontainerStart
