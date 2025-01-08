@@ -1,9 +1,8 @@
-tasks:
-    localstack-start:
-        name: localstack-start
-        command: |
-            echo "start localstack"
+services:
+    localstack:
+        name: localstack
         triggeredBy:
-        - manual
-        - postEnvironmentStart
-        # - postDevcontainerStart
+            - postEnvironmentStart
+        commands:
+            start: ACTIVATE_PRO=0 localstack start
+            stop: localstack stop
