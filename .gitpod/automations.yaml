@@ -5,5 +5,5 @@ tasks:
             echo "start localstack"
         triggeredBy:
         - manual
-        # - postEnvironmentStart
+        - postEnvironmentStart
         # - postDevcontainerStart
